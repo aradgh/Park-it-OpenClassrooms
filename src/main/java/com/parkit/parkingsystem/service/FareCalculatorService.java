@@ -18,20 +18,22 @@ public class FareCalculatorService {
         double durationInHour = (double) (outTime - inTime) /1000/60/60;
 
 
+        final double minPaidParkingTimeInHour = 0.5;
 //        Simplifier le switch
-
-        switch (ticket.getParkingSpot().getParkingType()){
-            case CAR: {
-                ticket.setPrice(durationInHour * Fare.CAR_RATE_PER_HOUR);
-                System.out.println("durationInHour = " + durationInHour);
-                System.out.println("ticket.getPrice() = " + ticket.getPrice());
-                break;
+        if(durationInHour > minPaidParkingTimeInHour) {
+            switch (ticket.getParkingSpot().getParkingType()){
+                case CAR: {
+                    ticket.setPrice(durationInHour * Fare.CAR_RATE_PER_HOUR);
+                    break;
+                }
+                case BIKE: {
+                    ticket.setPrice(durationInHour * Fare.BIKE_RATE_PER_HOUR);
+                    break;
+                }
+                default: throw new IllegalArgumentException("Unkown Parking Type");
             }
-            case BIKE: {
-                ticket.setPrice(durationInHour * Fare.BIKE_RATE_PER_HOUR);
-                break;
-            }
-            default: throw new IllegalArgumentException("Unkown Parking Type");
+        } else {
+            ticket.setPrice(0);
         }
 
 //        double vehicleTypeRate = 0;
