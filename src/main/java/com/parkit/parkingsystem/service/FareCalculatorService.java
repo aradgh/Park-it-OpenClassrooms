@@ -15,13 +15,15 @@ public class FareCalculatorService {
         long inTime = ticket.getInTime().getTime();
         long outTime = ticket.getOutTime().getTime();
 
-        long durationInHour = (outTime - inTime)/1000/60/60;
+        double durationInHour = (double) (outTime - inTime) /1000/60/60;
 
 
 //        Simplifier le switch
         switch (ticket.getParkingSpot().getParkingType()){
             case CAR: {
                 ticket.setPrice(durationInHour * Fare.CAR_RATE_PER_HOUR);
+                System.out.println("durationInHour = " + durationInHour);
+                System.out.println("ticket.getPrice() = " + ticket.getPrice());
                 break;
             }
             case BIKE: {
