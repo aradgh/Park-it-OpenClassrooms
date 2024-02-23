@@ -15,3 +15,17 @@ q
 Asrc/main/java/com/parkit/parkingsystem/constants/DBConstants.java,9\a\9a916e3a5d00f81123923d7b960791d58a790f1b
 B
 resources/Data.sql,2\c\2c00412a6d81a0b184af68e7ec42e8a8b3a372b7
+n
+>src/test/java/com/parkit/parkingsystem/ParkingServiceTest.java,b\f\bfafa75b381d8607fc05b55227f76d809f62e699
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+_
+/src/main/java/com/parkit/parkingsystem/App.java,f\4\f413b9814992e2e3525f88e4eb1a9b6234768a0e
+y
+Isrc/test/java/com/parkit/parkingsystem/integration/ParkingDataBaseIT.java,7\6\76c98b7b54c9c1b7a996ba73834a448b978db0f0
+i
+9src/main/java/com/parkit/parkingsystem/util/TimeUtil.java,9\8\987a15171eacbabcfcee6a3355a3793bce7ce5d9
+h
+8src/test/java/com/parkit/parkingsystem/TimeUtilTest.java,e\5\e58020de46a35f986fe915a7e66131e881e76b6c

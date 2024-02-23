@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FareCalculatorService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">parking-system</a> &gt; <a href="index.source.html" class="el_package">com.parkit.parkingsystem.service</a> &gt; <span class="el_source">FareCalculatorService.java</span></div><h1>FareCalculatorService.java</h1><pre class="source lang-java linenums">package com.parkit.parkingsystem.service;
+
+import com.parkit.parkingsystem.constants.Fare;
+import com.parkit.parkingsystem.model.Ticket;
+
+<span class="fc" id="L6">public class FareCalculatorService {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L9">        Ticket ticket = new Ticket();</span>
+<span class="nc" id="L10">        System.out.println(ticket.getPrice());</span>
+<span class="nc" id="L11">    }</span>
+
+    public void calculateFare(Ticket ticket, boolean isDiscount){
+<span class="pc bpc" id="L14" title="1 of 4 branches missed.">        if( (ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime())) ){</span>
+<span class="fc" id="L15">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot;+ticket.getOutTime().toString());</span>
+        }
+
+<span class="fc" id="L18">        final long inTime = ticket.getInTime().getTime();</span>
+<span class="fc" id="L19">        final long outTime = ticket.getOutTime().getTime();</span>
+
+//        TODO:Créer une classe TimeUtils avec une méthode static final calculateDuration() scope par défaut dans le package service
+//        TODO:Créer un test pour calculateDuration
+//        Config intellij pour mettre automatiquement les final
+//        (1000 * 60 * 60 ) là mettre dans une final private MILLI_TO_HOUR
+<span class="fc" id="L25">        final double durationInHour = (double) (outTime - inTime) /1000/60/60;</span>
+
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        final double discount = isDiscount ? 0.95 : 1;</span>
+<span class="fc" id="L28">        final double minPaidParkingTimeInHour = 0.5;</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if(durationInHour &gt;= minPaidParkingTimeInHour) {</span>
+<span class="pc bpc" id="L30" title="1 of 3 branches missed.">            switch (ticket.getParkingSpot().getParkingType()){</span>
+                case CAR: {
+<span class="fc" id="L32">                    ticket.setPrice(durationInHour * discount * Fare.CAR_RATE_PER_HOUR);</span>
+<span class="fc" id="L33">                    break;</span>
+                }
+                case BIKE: {
+<span class="fc" id="L36">                    ticket.setPrice(durationInHour * discount*  Fare.BIKE_RATE_PER_HOUR);</span>
+<span class="fc" id="L37">                    break;</span>
+                }
+<span class="nc" id="L39">                default: throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+            }
+        }
+<span class="fc" id="L42">    }</span>
+
+    public void calculateFare(Ticket ticket){
+<span class="fc" id="L45">        calculateFare(ticket, false);</span>
+<span class="fc" id="L46">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

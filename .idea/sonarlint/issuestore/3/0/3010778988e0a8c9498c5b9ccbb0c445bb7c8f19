@@ -1,14 +1,15 @@
 
-`	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(½¦ÀÜúÿÿÿÿ
-Q	java:S125)"<This block of commented-out lines of code should be removed.(õ¥ˆŸ
-@	java:S1060"+Replace this use of System.out by a logger.(ùÄ‘
-@	java:S1061"+Replace this use of System.out by a logger.(Õ„Ê³
-E	java:S1062"+Replace this use of System.out by a logger.(É…›àşÿÿÿÿ
-?	java:S106:"+Replace this use of System.out by a logger.(Üï¨E
-E	java:S106R"+Replace this use of System.out by a logger.(Ú€ãòüÿÿÿÿ
-@	java:S106S"+Replace this use of System.out by a logger.(§µ‘á
-?	java:S106T"+Replace this use of System.out by a logger.(“õé2
-@	java:S106^"+Replace this use of System.out by a logger.(§‘¬Î
-E	java:S106o"+Replace this use of System.out by a logger.(×„®Ñûÿÿÿÿ
-E	java:S106p"+Replace this use of System.out by a logger.(£‹äøÿÿÿÿ
-E	java:S106r"+Replace this use of System.out by a logger.(¶Œ¸“ÿÿÿÿÿ
+g	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(½¦ÀÜúÿÿÿÿ8ù‘ãßÛ1
+X	java:S125)"<This block of commented-out lines of code should be removed.(õ¥ˆŸ8È’ãßÛ1
+G	java:S1060"+Replace this use of System.out by a logger.(ùÄ‘8Í’ãßÛ1
+G	java:S1061"+Replace this use of System.out by a logger.(Õ„Ê³8Ï’ãßÛ1
+L	java:S1062"+Replace this use of System.out by a logger.(É…›àşÿÿÿÿ8Ğ’ãßÛ1
+L	java:S1063"+Replace this use of System.out by a logger.(’ãÏıÿÿÿÿ8Ñ’ãßÛ1
+F	java:S106;"+Replace this use of System.out by a logger.(Üï¨E8Ô’ãßÛ1
+L	java:S106S"+Replace this use of System.out by a logger.(Ú€ãòüÿÿÿÿ8Ü’ãßÛ1
+G	java:S106T"+Replace this use of System.out by a logger.(§µ‘á8Ü’ãßÛ1
+F	java:S106U"+Replace this use of System.out by a logger.(“õé28İ’ãßÛ1
+G	java:S106_"+Replace this use of System.out by a logger.(§‘¬Î8Ş’ãßÛ1
+L	java:S106t"+Replace this use of System.out by a logger.(×„®Ñûÿÿÿÿ8å’ãßÛ1
+L	java:S106u"+Replace this use of System.out by a logger.(£‹äøÿÿÿÿ8æ’ãßÛ1
+L	java:S106w"+Replace this use of System.out by a logger.(¶Œ¸“ÿÿÿÿÿ8æ’ãßÛ1
