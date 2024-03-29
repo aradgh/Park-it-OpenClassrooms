@@ -9,7 +9,7 @@ public class FareCalculatorService {
         if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
             throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
         }
-//        TODO:Créer un test pour calculateDuration
+
         final double durationInHour = TimeUtil.calculateDurationInHour(ticket.getInTime(), ticket.getOutTime());
         final double discount = isDiscount ? 0.95 : 1;
         final double minPaidParkingTimeInHour = 0.5;

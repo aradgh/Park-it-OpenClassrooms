@@ -11,10 +11,10 @@ l
 java:S20950"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“ñ¶¡8í­«ŒÛ1
 q
 java:S2095L"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÍÔ´ïÿÿÿÿÿ8í­«ŒÛ1
-i
-java:S2095`"GUse try-with-resources or close this "!Unknown!" in a "finally" clause.(¨şÍ´úÿÿÿÿ8å·ŒÛ1
 q
 java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ïØ Şıÿÿÿÿ8í­«ŒÛ1
+q
+java:S2095`"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨şÍ´úÿÿÿÿ8å·ŒÛ1
 [
 java:S3516"9Refactor this method to not always return the same value.(½¸Çúÿÿÿÿÿ8î­«ŒÛ1
 ]	java:S125"<This block of commented-out lines of code should be removed.(®ÂÙüÿÿÿÿÿ8õ­«ŒÛ1
