@@ -1,13 +1,11 @@
 
-g	java:S112J"FDefine and throw a dedicated exception instead of using a generic one.(½¦ÀÜúÿÿÿÿ8¯¦ìä1
-X	java:S125*"<This block of commented-out lines of code should be removed.(õ¥ˆŸ8‰Ì’®İ1
-G	java:S1061"+Replace this use of System.out by a logger.(ùÄ‘8˜Ì’®İ1
-G	java:S1062"+Replace this use of System.out by a logger.(Õ„Ê³8¨Ì’®İ1
-L	java:S1063"+Replace this use of System.out by a logger.(É…›àşÿÿÿÿ8©Ì’®İ1
-L	java:S1064"+Replace this use of System.out by a logger.(“»õõüÿÿÿÿ8¸Ì’®İ1
-W	java:S125<"<This block of commented-out lines of code should be removed.(çç“h8¡ïìä1
-L	java:S106U"+Replace this use of System.out by a logger.(Ú€ãòüÿÿÿÿ8ÄÌ’®İ1
-G	java:S106V"+Replace this use of System.out by a logger.(§µ‘á8Ÿß’®İ1
-F	java:S106W"+Replace this use of System.out by a logger.(“õé28 ß’®İ1
-G	java:S106a"+Replace this use of System.out by a logger.(§‘¬Î8¢ß’®İ1
-]	java:S125g"<This block of commented-out lines of code should be removed.(ĞìÖ¬úÿÿÿÿ8§óîä1
+g	java:S112G"FDefine and throw a dedicated exception instead of using a generic one.(½¦ÀÜúÿÿÿÿ8¯¦ìä1
+X	java:S125,"<This block of commented-out lines of code should be removed.(õ¥ˆŸ8‰Ì’®İ1
+G	java:S1063"+Replace this use of System.out by a logger.(ùÄ‘8˜Ì’®İ1
+G	java:S1064"+Replace this use of System.out by a logger.(Õ„Ê³8¨Ì’®İ1
+L	java:S1065"+Replace this use of System.out by a logger.(É…›àşÿÿÿÿ8©Ì’®İ1
+L	java:S1066"+Replace this use of System.out by a logger.(“»õõüÿÿÿÿ8¸Ì’®İ1
+L	java:S106R"+Replace this use of System.out by a logger.(Ú€ãòüÿÿÿÿ8ÄÌ’®İ1
+G	java:S106S"+Replace this use of System.out by a logger.(§µ‘á8Ÿß’®İ1
+F	java:S106T"+Replace this use of System.out by a logger.(“õé28 ß’®İ1
+G	java:S106^"+Replace this use of System.out by a logger.(§‘¬Î8¢ß’®İ1

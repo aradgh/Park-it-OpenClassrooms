@@ -2,6 +2,7 @@ package com.parkit.parkingsystem.service;
 
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.model.Ticket;
+import com.parkit.parkingsystem.util.FareUtil;
 import com.parkit.parkingsystem.util.TimeUtil;
 
 public class FareCalculatorService {
@@ -15,18 +16,20 @@ public class FareCalculatorService {
         final double minPaidParkingTimeInHour = 0.5;
 
         if (durationInHour >= minPaidParkingTimeInHour) {
+            final double price;
             switch (ticket.getParkingSpot().getParkingType()) {
                 case CAR: {
-                    ticket.setPrice(durationInHour * discount * Fare.CAR_RATE_PER_HOUR);
+                    price = durationInHour * discount * Fare.CAR_RATE_PER_HOUR;
                     break;
                 }
                 case BIKE: {
-                    ticket.setPrice(durationInHour * discount * Fare.BIKE_RATE_PER_HOUR);
+                    price = durationInHour * discount * Fare.BIKE_RATE_PER_HOUR;
                     break;
                 }
                 default:
-                    throw new IllegalArgumentException("Unkown Parking Type");
+                    throw new IllegalArgumentException("Unknown Parking Type");
             }
+            ticket.setPrice(FareUtil.roundToTwoDecimals(price));
         }
     }
 

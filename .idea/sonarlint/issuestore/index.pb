@@ -45,3 +45,7 @@ t
 Dsrc/main/java/com/parkit/parkingsystem/service/InteractiveShell.java,7\7\773c684c7c8bfd06f3cca6e47054bf5e1510573f
 8
 logs.txt,1\d\1dd35c026cb6ba796cb4cee814165d6493551a7f
+m
+=src/main/java/com/parkit/parkingsystem/model/ParkingSpot.java,3\1\318986ef301ad062e600ed154b628f156483e6f7
+i
+9src/main/java/com/parkit/parkingsystem/util/FareUtil.java,0\2\026891baeb2ec005a81bce3c32d701810ba210c7
