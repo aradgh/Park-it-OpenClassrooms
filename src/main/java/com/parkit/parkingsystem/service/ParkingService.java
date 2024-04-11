@@ -32,16 +32,15 @@ public class ParkingService {
 
     public void processIncomingVehicle() {
         try {
-            ParkingSpot parkingSpot = getNextParkingNumberIfAvailable();
+            final ParkingSpot parkingSpot = getNextParkingNumberIfAvailable();
             if (parkingSpot != null && parkingSpot.getId() > 0) {
-                String vehicleRegNumber = inputReaderUtil.readVehicleRegistrationNumber();
+                final String vehicleRegNumber = inputReaderUtil.readVehicleRegistrationNumber();
                 parkingSpot.setAvailable(false);
-                parkingSpotDAO.updateParking(parkingSpot);//allot this parking space and mark it's availability as false
+                parkingSpotDAO.updateParking(parkingSpot);//allot this parking space and mark its availability as false
 
-                Date inTime = new Date();
-                Ticket ticket = new Ticket();
-                //ID, PARKING_NUMBER, VEHICLE_REG_NUMBER, PRICE, IN_TIME, OUT_TIME)
-                //ticket.setId(ticketID);
+                final Date inTime = new Date();
+                final Ticket ticket = new Ticket();
+
                 ticket.setParkingSpot(parkingSpot);
                 ticket.setVehicleRegNumber(vehicleRegNumber);
                 ticket.setPrice(0);

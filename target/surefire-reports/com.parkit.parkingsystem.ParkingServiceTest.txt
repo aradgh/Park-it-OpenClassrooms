@@ -1,23 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.parkit.parkingsystem.ParkingServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.765 s <<< FAILURE! - in com.parkit.parkingsystem.ParkingServiceTest
-testProcessIncomingVehicle  Time elapsed: 0.063 s  <<< ERROR!
-java.lang.VerifyError: 
-Bad return type
-Exception Details:
-  Location:
-    org/mockito/internal/junit/ExceptionFactory$JUnitArgsAreDifferent.create(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/AssertionError; @18: areturn
-  Reason:
-    Type 'org/mockito/exceptions/verification/junit/ArgumentsAreDifferent' (current frame, stack[0]) is not assignable to 'java/lang/AssertionError' (from method signature)
-  Current Frame:
-    bci: @18
-    flags: { }
-    locals: { 'java/lang/String', 'java/lang/String', 'java/lang/String', '[Z' }
-    stack: { 'org/mockito/exceptions/verification/junit/ArgumentsAreDifferent' }
-  Bytecode:
-    0000000: b800 224e bb00 0259 2a2b 2cb7 0003 2d04
-    0000010: 0454 b0                                
-
-	at com.parkit.parkingsystem.ParkingServiceTest.testProcessIncomingVehicle(ParkingServiceTest.java:92)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.819 s - in com.parkit.parkingsystem.ParkingServiceTest

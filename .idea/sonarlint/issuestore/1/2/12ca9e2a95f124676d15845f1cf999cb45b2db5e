@@ -1,22 +1,12 @@
 
 w
-java:S1104"ZMake dataBaseConfig a static final constant or non-public and provide accessors if needed.(÷õûÊ8‡­«ŒÛ1
-Q
-java:S1143'"5Remove this return statement from this finally block.(¸®Ã'8ˆ­«ŒÛ1
+java:S1104"ZMake dataBaseConfig a static final constant or non-public and provide accessors if needed.(÷õûÊ8È¬ëê1
 R
-java:S1143D"5Remove this return statement from this finally block.( °üÓ8‰­«ŒÛ1
-W
-java:S1143n"5Remove this return statement from this finally block.(Ÿùèüÿÿÿÿ8Ùä·ŒÛ1
+java:S1143D"5Remove this return statement from this finally block.( °üÓ8‚È¬ëê1
 l
-java:S20950"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“ñ¶¡8í­«ŒÛ1
+java:S20950"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“ñ¶¡8®È¬ëê1
 q
-java:S2095L"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÍÔ´ïÿÿÿÿÿ8í­«ŒÛ1
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ïØ Şıÿÿÿÿ8®È¬ëê1
 q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ïØ Şıÿÿÿÿ8í­«ŒÛ1
-q
-java:S2095`"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨şÍ´úÿÿÿÿ8å·ŒÛ1
-[
-java:S3516"9Refactor this method to not always return the same value.(½¸Çúÿÿÿÿÿ8î­«ŒÛ1
-]	java:S125"<This block of commented-out lines of code should be removed.(®ÂÙüÿÿÿÿÿ8õ­«ŒÛ1
-c
-java:S3457k"AFormat specifiers should be used instead of string concatenation.(Ñ´Šîüÿÿÿÿ8¡å·ŒÛ1
+java:S2095L"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÍÔ´ïÿÿÿÿÿ8®È¬ëê1
+]	java:S125"<This block of commented-out lines of code should be removed.(®ÂÙüÿÿÿÿÿ8´È¬ëê1
