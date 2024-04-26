@@ -49,3 +49,5 @@ m
 =src/main/java/com/parkit/parkingsystem/model/ParkingSpot.java,3\1\318986ef301ad062e600ed154b628f156483e6f7
 i
 9src/main/java/com/parkit/parkingsystem/util/FareUtil.java,0\2\026891baeb2ec005a81bce3c32d701810ba210c7
+†
+Vsrc/test/java/com/parkit/parkingsystem/integration/service/DataBasePrepareService.java,f\b\fbb2241be41cb3e33b3972a1e0455f171de532a4
