@@ -51,3 +51,5 @@ i
 9src/main/java/com/parkit/parkingsystem/util/FareUtil.java,0\2\026891baeb2ec005a81bce3c32d701810ba210c7
 †
 Vsrc/test/java/com/parkit/parkingsystem/integration/service/DataBasePrepareService.java,f\b\fbb2241be41cb3e33b3972a1e0455f171de532a4
+q
+Asrc/main/java/com/parkit/parkingsystem/constants/ParkingType.java,d\8\d8f01a22f362ded7d3c261a801b40e51fef59549
