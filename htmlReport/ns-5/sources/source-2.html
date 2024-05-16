@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Ticket</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.parkit.parkingsystem.model</a>
+</div>
+
+<h1>Coverage Summary for Class: Ticket (com.parkit.parkingsystem.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Ticket</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    84,6%
+  </span>
+  <span class="absValue">
+    (11/13)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    84,6%
+  </span>
+  <span class="absValue">
+    (11/13)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.parkit.parkingsystem.model;
+&nbsp;
+&nbsp;import java.util.Calendar;
+&nbsp;import java.util.Date;
+&nbsp;
+<b class="fc">&nbsp;public class Ticket {</b>
+&nbsp;    private int id;
+&nbsp;    private ParkingSpot parkingSpot;
+&nbsp;    private String vehicleRegNumber;
+&nbsp;    private double price;
+&nbsp;    private Date inTime;
+&nbsp;    private Date outTime;
+&nbsp;
+&nbsp;    public int getId() {
+<b class="nc">&nbsp;        return id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setId(int id) {
+<b class="nc">&nbsp;        this.id = id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public ParkingSpot getParkingSpot() {
+<b class="fc">&nbsp;        return parkingSpot;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setParkingSpot(ParkingSpot parkingSpot) {
+<b class="fc">&nbsp;        this.parkingSpot = parkingSpot;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getVehicleRegNumber() {
+<b class="fc">&nbsp;        return vehicleRegNumber;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setVehicleRegNumber(String vehicleRegNumber) {
+<b class="fc">&nbsp;        this.vehicleRegNumber = vehicleRegNumber;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double getPrice() {
+<b class="fc">&nbsp;        return price;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setPrice(double price) {
+<b class="fc">&nbsp;        this.price = price;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Date getInTime() {
+<b class="fc">&nbsp;        return inTime;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setInTime(Date inTime) {
+<b class="fc">&nbsp;        this.inTime = inTime;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Date getOutTime() {
+<b class="fc">&nbsp;        return outTime;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setOutTime(Date outTime) {
+<b class="fc">&nbsp;        this.outTime = outTime;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-18 12:47</div>
+</div>
+</body>
+</html>

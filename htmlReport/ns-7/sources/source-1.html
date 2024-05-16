@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > InputReaderUtil</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.parkit.parkingsystem.util</a>
+</div>
+
+<h1>Coverage Summary for Class: InputReaderUtil (com.parkit.parkingsystem.util)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">InputReaderUtil</td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (1/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11,8%
+  </span>
+  <span class="absValue">
+    (2/17)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">InputReaderUtil$MockitoMock$130685221</td>
+  </tr>
+  <tr>
+    <td class="name">InputReaderUtil$MockitoMock$130685221$auxiliary$1VkVwVzV</td>
+  </tr>
+  <tr>
+    <td class="name">InputReaderUtil$MockitoMock$130685221$auxiliary$4iHYkiI0</td>
+  </tr>
+  <tr>
+    <td class="name">InputReaderUtil$MockitoMock$130685221$auxiliary$Gs5mwrGK</td>
+  </tr>
+  <tr>
+    <td class="name">InputReaderUtil$MockitoMock$130685221$auxiliary$vcfy5n7T</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    25%
+  </span>
+  <span class="absValue">
+    (1/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    11,8%
+  </span>
+  <span class="absValue">
+    (2/17)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.parkit.parkingsystem.util;
+&nbsp;
+&nbsp;import org.apache.logging.log4j.LogManager;
+&nbsp;import org.apache.logging.log4j.Logger;
+&nbsp;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class InputReaderUtil {</b>
+&nbsp;
+<b class="fc">&nbsp;    private static Scanner scan = new Scanner(System.in);</b>
+<b class="fc">&nbsp;    private static final Logger logger = LogManager.getLogger(&quot;InputReaderUtil&quot;);</b>
+&nbsp;
+&nbsp;    public int readSelection() {
+&nbsp;        try {
+<b class="nc">&nbsp;            int input = Integer.parseInt(scan.nextLine());</b>
+<b class="nc">&nbsp;            return input;</b>
+<b class="nc">&nbsp;        }catch(Exception e){</b>
+<b class="nc">&nbsp;            logger.error(&quot;Error while reading user input from Shell&quot;, e);</b>
+<b class="nc">&nbsp;            System.out.println(&quot;Error reading input. Please enter valid number for proceeding further&quot;);</b>
+<b class="nc">&nbsp;            return -1;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public String readVehicleRegistrationNumber() throws Exception {
+&nbsp;        try {
+<b class="nc">&nbsp;            String vehicleRegNumber= scan.nextLine();</b>
+<b class="nc">&nbsp;            if(vehicleRegNumber == null || vehicleRegNumber.trim().length()==0) {</b>
+<b class="nc">&nbsp;                throw new IllegalArgumentException(&quot;Invalid input provided&quot;);</b>
+&nbsp;            }
+<b class="nc">&nbsp;            return vehicleRegNumber;</b>
+<b class="nc">&nbsp;        }catch(Exception e){</b>
+<b class="nc">&nbsp;            logger.error(&quot;Error while reading user input from Shell&quot;, e);</b>
+<b class="nc">&nbsp;            System.out.println(&quot;Error reading input. Please enter a valid string for vehicle registration number&quot;);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-18 12:47</div>
+</div>
+</body>
+</html>

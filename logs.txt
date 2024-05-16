@@ -1,0 +1,20 @@
+2024-03-15 12:30:18 INFO  App:10 - Initializing Parking System
+2024-03-15 12:30:18 INFO  InteractiveShell:14 - App initialized!!!
+2024-03-15 12:30:22 INFO  DataBaseConfig:13 - Create DB connection
+2024-03-15 12:30:23 INFO  DataBaseConfig:45 - Closing Result Set
+2024-03-15 12:30:23 INFO  DataBaseConfig:34 - Closing Prepared Statement
+2024-03-15 12:30:23 INFO  DataBaseConfig:23 - Closing DB connection
+2024-03-15 12:30:23 ERROR ParkingService:79 - Error fetching next available parking slot
+java.lang.Exception: Error fetching parking number from DB. Parking slots might be full
+	at com.parkit.parkingsystem.service.ParkingService.getNextParkingNumberIfAvailable(ParkingService.java:74) [classes/:?]
+	at com.parkit.parkingsystem.service.ParkingService.processIncomingVehicle(ParkingService.java:33) [classes/:?]
+	at com.parkit.parkingsystem.service.InteractiveShell.loadInterface(InteractiveShell.java:28) [classes/:?]
+	at com.parkit.parkingsystem.App.main(App.java:11) [classes/:?]
+2024-03-15 12:30:26 ERROR InputReaderUtil:18 - Error while reading user input from Shell
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:671) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:777) ~[?:?]
+	at com.parkit.parkingsystem.util.InputReaderUtil.readSelection(InputReaderUtil.java:15) [classes/:?]
+	at com.parkit.parkingsystem.service.InteractiveShell.loadInterface(InteractiveShell.java:25) [classes/:?]
+	at com.parkit.parkingsystem.App.main(App.java:11) [classes/:?]
