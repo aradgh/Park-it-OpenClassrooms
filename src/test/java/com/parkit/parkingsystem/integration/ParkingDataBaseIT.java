@@ -98,26 +98,27 @@ class ParkingDataBaseIT {
     void testParkingLotExitRecurringUser() {
         final ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
 
-        parkingService.processIncomingVehicle();
+        final Ticket ticketEntryFirst = new Ticket();
+        final ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR, true);
 
-        try {
-            Thread.sleep(2000); // Pause de 2 secondes (2000 millisecondes)
-        } catch (InterruptedException e) {
-            // Gérer l'exception si la pause est interrompue
-        }
+        ticketEntryFirst.setVehicleRegNumber("ABCDEF");
+        ticketEntryFirst.setParkingSpot(parkingSpot);
 
-//        parkingService.processExitingVehicle();
-//
-//        // Re-entree du véhicule
-//        parkingService.processIncomingVehicle();
-
-//        Créer moi 2 nouveaux tickets, pas besoin d'appeler processIncomingVehicle()
-        final Ticket ticketEntry = ticketDAO.getTicket("ABCDEF");
-//        dataBasePrepareService.clearDataBaseEntries();
         final Date inTime = new Date();
-        inTime.setTime(System.currentTimeMillis() - (60 * 60 * 1000));
-        ticketEntry.setInTime(inTime);
-        ticketDAO.saveTicket(ticketEntry);
+        inTime.setTime(System.currentTimeMillis() - (3 * 60 * 60 * 1000));
+        ticketEntryFirst.setInTime(inTime);
+        final Date outTime = new Date();
+        outTime.setTime(System.currentTimeMillis() - (2 * 60 * 60 * 1000));
+        ticketEntryFirst.setOutTime(outTime);
+        ticketDAO.saveTicket(ticketEntryFirst);
+
+        final Ticket ticketEntrySecond = new Ticket();
+        ticketEntrySecond.setVehicleRegNumber("ABCDEF");
+        ticketEntrySecond.setParkingSpot(parkingSpot);
+        final Date inTimeSecond = new Date();
+        inTimeSecond.setTime(System.currentTimeMillis() - (60 * 60 * 1000));
+        ticketEntrySecond.setInTime(inTimeSecond);
+        ticketDAO.saveTicket(ticketEntrySecond);
 
         parkingService.processExitingVehicle();
 
