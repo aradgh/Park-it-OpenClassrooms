@@ -1,9 +1,9 @@
 
 –
-java:S1104"ZMake dataBaseConfig a static final constant or non-public and provide accessors if needed.(÷õûÊJ$6189ceee-387a-49bc-938a-6c282dd01af0
+java:S1104"ZMake dataBaseConfig a static final constant or non-public and provide accessors if needed.(÷õûÊJ$0e72f426-6f5d-44d3-adb6-18b8020365f6
 
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¸²ı×øÿÿÿÿJ$bccfac0a-9fba-49ce-9c1b-0c4012b688bc
+java:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş¼ÇÖıÿÿÿÿJ$16fc4bda-b29a-49ff-8e4a-17b2bb4e86a7
 
-java:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş¼ÇÖıÿÿÿÿJ$1604c7d8-dab5-41ed-9d82-b318c392210e
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¸²ı×øÿÿÿÿJ$40705946-678a-489d-8d18-498cabf064fb
 ]
-java:S1116"Remove this empty statement.(äÛç–üÿÿÿÿJ$18649c94-4ed6-4e56-9d51-28bd513187eb
+java:S1116"Remove this empty statement.(äÛç–üÿÿÿÿJ$aaab6b59-025d-47e4-85be-b5870d1b5b58

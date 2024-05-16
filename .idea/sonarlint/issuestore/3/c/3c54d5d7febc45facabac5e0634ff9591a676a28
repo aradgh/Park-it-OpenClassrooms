@@ -1,6 +1,6 @@
 
-
-java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "input".(êÎªáÿÿÿÿÿ8¦Õãä1
-L	java:S106"+Replace this use of System.out by a logger.(›í²—ÿÿÿÿÿ8¼Õãä1
-F	java:S106"+Replace this use of System.out by a logger.(Üï¨E8ÂÕãä1
-G	java:S106#"+Replace this use of System.out by a logger.(ÃÓë·8€£îä1
+¥
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "input".(êÎªáÿÿÿÿÿ8ï„Üö÷1J$8afd584c-dfd4-44e2-88d6-078937dbab8c
+r	java:S106"+Replace this use of System.out by a logger.(›í²—ÿÿÿÿÿ8“…Üö÷1J$a6f111e0-5182-4436-b8ab-f2797083c22a
+l	java:S106"+Replace this use of System.out by a logger.(Üï¨E8•…Üö÷1J$67678ffd-fc28-4896-a653-8a5c44a01786
+m	java:S106#"+Replace this use of System.out by a logger.(ÃÓë·8š…Üö÷1J$b44edf51-0c79-4b0d-8ce0-5f8afca7e2b8
