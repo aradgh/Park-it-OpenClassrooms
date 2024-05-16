@@ -7,7 +7,6 @@ import com.parkit.parkingsystem.util.TimeUtil;
 
 public class FareCalculatorService {
     public void calculateFare(final Ticket ticket, final boolean isDiscount) {
-//        Ajouter le before dans le calculateDurationInHour
         if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
             throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
         }

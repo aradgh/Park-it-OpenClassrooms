@@ -55,7 +55,7 @@ class ParkingDataBaseIT {
         when(inputReaderUtil.readSelection()).thenReturn(1);
         final ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         parkingService.processIncomingVehicle();
-        //TODO: check that a ticket is actually saved in DB and Parking table is updated with availability
+
         final Ticket ticket = ticketDAO.getTicket("ABCDEF");
         final ParkingSpot parkingSpot = ticket.getParkingSpot();
         assertNotNull(ticket);

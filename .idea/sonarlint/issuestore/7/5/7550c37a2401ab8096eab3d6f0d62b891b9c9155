@@ -2,8 +2,8 @@
 –
 java:S1104"ZMake dataBaseConfig a static final constant or non-public and provide accessors if needed.(÷õûÊJ$6189ceee-387a-49bc-938a-6c282dd01af0
 
-java:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş¼ÇÖıÿÿÿÿJ$1604c7d8-dab5-41ed-9d82-b318c392210e
-
 java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¸²ı×øÿÿÿÿJ$bccfac0a-9fba-49ce-9c1b-0c4012b688bc
+
+java:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ş¼ÇÖıÿÿÿÿJ$1604c7d8-dab5-41ed-9d82-b318c392210e
 ]
 java:S1116"Remove this empty statement.(äÛç–üÿÿÿÿJ$18649c94-4ed6-4e56-9d51-28bd513187eb
